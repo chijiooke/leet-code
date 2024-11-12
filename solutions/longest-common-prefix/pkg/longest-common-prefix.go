@@ -6,6 +6,10 @@ import (
 
 func LongestCommonPrefix(strs []string) string {
 
+	if len(strs) == 0 {
+        return ""
+    }
+
 	var l string //longest common prefix
 
 	var curPrefix string
